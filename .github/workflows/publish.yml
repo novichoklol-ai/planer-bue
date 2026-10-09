@@ -1,0 +1,61 @@
+name: Publish planner
+on:
+  release:
+    types: [published]
+  push:
+    branches: [main]
+    paths: ['site/**', 'scripts/**', '.github/workflows/publish.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.event_name != 'release' || github.event.release.tag_name == 'v1.9.0'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Import prepared source on the first release
+        if: hashFiles('site/index.html') == ''
+        env:
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          curl --fail --location --retry 3 --output /tmp/planner-v20.zip "https://github.com/${REPOSITORY}/releases/download/v1.9.0/planer-bue-migration-v20.zip"
+          echo 'de6295f6a4bbd97322a0c19ff68788988f78e53668057880366f15b3d293517a  /tmp/planner-v20.zip' | sha256sum --check
+          python3 - <<'PY'
+          import zipfile
+          from pathlib import Path
+          with zipfile.ZipFile('/tmp/planner-v20.zip') as archive:
+              for info in archive.infolist():
+                  if info.is_dir(): continue
+                  name = info.filename
+                  if not name.startswith(('repository/site/', 'repository/scripts/')) and name not in ('repository/README.md', 'repository/.gitignore'): continue
+                  relative = Path(name.removeprefix('repository/'))
+                  if relative.is_absolute() or '..' in relative.parts: raise SystemExit('Unsafe source path')
+                  if (info.external_attr >> 16) & 0o170000 == 0o120000: raise SystemExit('Symlinks are not allowed')
+                  target = Path.cwd() / relative
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(archive.read(info))
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site scripts README.md .gitignore
+          git commit -m 'Import planner 1.9.0: voice input and text size'
+          git push origin HEAD:main
+      - name: Configure release download links
+        run: python3 scripts/configure_downloads.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
+        id: deployment
