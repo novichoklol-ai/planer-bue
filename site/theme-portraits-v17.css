@@ -1,0 +1,24 @@
+html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-fighter{display:flex;position:relative;isolation:isolate;overflow:hidden;margin:16px 16px 6px;min-height:188px;border:1px solid var(--accent);border-radius:16px;background:var(--card);box-shadow:0 6px 24px #0002}
+html[data-hero-theme]:not([data-hero-theme="mk3"]) #mk-portrait{position:absolute;right:0;top:0;bottom:0;width:188px;height:188px;z-index:1;image-rendering:auto;background-repeat:no-repeat}
+html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-fighter-copy{background:linear-gradient(90deg,var(--card) 83%,transparent);padding:18px 8px 18px 16px;width:55%}
+html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-fighter-copy strong{font-family:Georgia,serif;color:var(--text);font-size:calc(24px * var(--bue-font-scale,1));text-shadow:none}
+html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-fighter-copy p{color:var(--muted)}
+html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-edition{font:calc(9px * var(--bue-font-scale,1))/1.4 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color:var(--accent);letter-spacing:1px}
+html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-round{color:var(--reactor);font-family:inherit;font-size:calc(11px * var(--bue-font-scale,1));letter-spacing:.5px}
+html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-health{background:var(--soft);border-color:var(--line);border-radius:4px;box-shadow:none;overflow:hidden}
+html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-health i{background:linear-gradient(90deg,var(--armor),var(--accent))}
+html[data-hero-theme="gentle"] .mk-fighter{border-color:#d9b4c5;border-radius:24px;box-shadow:0 8px 24px #c6aab31c}
+html[data-hero-theme="gentle"] .mk-fighter-copy strong{font-size:calc(25px * var(--bue-font-scale,1));color:#714b62}
+html[data-hero-theme="gentle"] .mk-health{display:none}
+html[data-hero-theme="action90s"]{--armor:#ae784d;--wash:#74533c55;--glow:#60949826;--bg:#0e1418;--card:#1b262c;--line:#56636a;--accent:#e8be83;--reactor:#9bbfc0;--muted:#b6babc;--header:#784d3155;--table:#3d525a;--panel-hi:#806e4433}
+html[data-hero-theme="action90s"] .hero-helmet{display:none}
+html[data-hero-theme="action90s"] .mk-fighter-copy strong{font-size:calc(22px * var(--bue-font-scale,1))}
+@media(max-width:360px){html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-fighter{min-height:172px;margin:12px 10px 4px}html[data-hero-theme]:not([data-hero-theme="mk3"]) #mk-portrait{width:172px;height:172px}html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-fighter-copy{padding-left:12px;width:56%}html[data-hero-theme]:not([data-hero-theme="mk3"]) .mk-fighter-copy strong{font-size:calc(21px * var(--bue-font-scale,1));overflow-wrap:anywhere}}
+
+/* Character and floral artwork are photographs/film stills; no vector character artwork is rendered. */
+html[data-hero-theme] .hero-helmet{display:none}
+html[data-hero-theme="gentle"] .hero:before{display:none}
+.theme-preview{display:block;position:relative;flex:0 0 54px;width:54px;height:54px;overflow:hidden;border-radius:10px}
+html[data-hero-theme] .theme-choice .theme-preview img{display:block;width:54px;height:54px;object-fit:cover;border:0;max-width:none;border-radius:0}
+html[data-hero-theme] .theme-choice .theme-preview img.theme-atlas-thumb{width:162px;height:162px;object-fit:fill}
+html[data-hero-theme] .theme-choice[data-theme-select="mk3"] .theme-preview img.theme-atlas-thumb{width:216px;height:162px}

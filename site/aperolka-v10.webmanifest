@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "Аперолька",
+  "short_name": "Аперолька",
+  "description": "Дела, календарь, цели, месячный финансовый план и желания: книги, фильмы, рецепты.",
+  "lang": "ru",
+  "start_url": "aperolka/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d1520",
+  "theme_color": "#0d1520",
+  "icons": [
+    {
+      "src": "https://myday-hero-oct08-2026.welltoast4.chatgpt.site/assets/ironman-icon-192-v10.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://myday-hero-oct08-2026.welltoast4.chatgpt.site/assets/ironman-icon-512-v10.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

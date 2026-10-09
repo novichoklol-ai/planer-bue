@@ -1,0 +1,7 @@
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+.env
+private/
+packages/

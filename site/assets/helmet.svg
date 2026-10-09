@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+ <defs>
+  <radialGradient id="bg"><stop stop-color="#223c52"/><stop offset="1" stop-color="#070c17"/></radialGradient>
+  <linearGradient id="red" x2="1" y2="1"><stop stop-color="#fc5953"/><stop offset=".3" stop-color="#a71528"/><stop offset=".65" stop-color="#4e0918"/><stop offset="1" stop-color="#d43e42"/></linearGradient>
+  <linearGradient id="gold" x2=".65" y2="1"><stop stop-color="#ffeba9"/><stop offset=".25" stop-color="#edb955"/><stop offset=".6" stop-color="#a06c25"/><stop offset=".8" stop-color="#f0c771"/><stop offset="1" stop-color="#8e5722"/></linearGradient>
+  <linearGradient id="eye" x2="0" y2="1"><stop stop-color="white"/><stop offset="1" stop-color="#65edff"/></linearGradient>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="11"/></filter>
+ </defs>
+ <path fill="url(#bg)" d="M0 0h1024v1024H0z"/>
+ <circle cx="512" cy="512" r="377" fill="none" stroke="#68e6ff" stroke-opacity=".23" stroke-width="3"/>
+ <path d="M172 225h84M768 225h84M172 799h84M768 799h84" stroke="#ecbb61" stroke-width="7"/>
+ <path d="M352 172 431 132h162l79 40 86 149 5 258-48 163-96 124-107 41-107-41-96-124-48-163 5-258z" fill="url(#red)" stroke="#ec8a73" stroke-width="7"/>
+ <path d="M431 133h162l32 153-53 45H452l-53-45z" fill="#571121" stroke="#c95350" stroke-width="5"/>
+ <path d="m360 236 63 83 89 26 89-26 63-83 38 124-25 168-60 62 5 115-61 59h-98l-61-59 5-115-60-62-25-168z" fill="url(#gold)" stroke="#ffdb86" stroke-width="5"/>
+ <path d="m328 398 119 38 37 63-136-41zM696 398l-119 38-37 63 136-41z" fill="#102235" stroke="#6e4b25" stroke-width="11"/>
+ <path d="m343 418 106 31 20 30-119-30zM681 418l-106 31-20 30 119-30z" fill="#50e9ff" filter="url(#glow)"/>
+ <path d="m343 418 106 31 20 30-119-30zM681 418l-106 31-20 30 119-30z" fill="url(#eye)"/>
+ <path d="m512 350-31 225h62z" fill="#ffe1a2" fill-opacity=".3"/>
+ <path d="m399 601 36 38h154l36-38M424 709h176" fill="none" stroke="#513d26" stroke-width="13"/>
+ <path d="m413 792 54 34h90l54-34 24 41-70 53H459l-70-53z" fill="url(#gold)" stroke="#d69b50" stroke-width="4"/>
+ <path d="m300 525 42 41 19 146 53 71M724 525l-42 41-19 146-53 71" fill="none" stroke="#ff7770" stroke-opacity=".48" stroke-width="5"/>
+</svg>

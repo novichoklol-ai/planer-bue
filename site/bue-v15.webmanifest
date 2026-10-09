@@ -1,0 +1,19 @@
+{
+  "id": "bue/",
+  "name": "Планер BUE",
+  "short_name": "Планер BUE",
+  "lang": "ru",
+  "start_url": "bue/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e1418",
+  "theme_color": "#0e1418",
+  "icons": [
+    {
+      "src": "assets/bue-mk-icon-v13.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

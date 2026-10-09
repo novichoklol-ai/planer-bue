@@ -1,0 +1,42 @@
+/* One original pixel-art atlas; portraits are selected with CSS, without changing the artwork. */
+.mk-fighter{display:none}.mk-portrait{background-image:url('assets/mk3-fighters-v12.png');background-size:400% 300%;background-repeat:no-repeat;image-rendering:pixelated}
+html[data-theme="mk3"]{color-scheme:dark;--bg:#110b15;--card:#211624;--text:#fff6df;--muted:#c8b7cd;--line:#735843;--accent:#ffd77b;--reactor:#ffe4a5;--armor:#8a2838;--soft:#362132;--wash:#54204366;--glow:#efb75219;--header:#6c293759;--table:#492833;--panel-hi:#52304b33;--green:#abefa2;--red:#ff9b9b;--fighter-color:#ffd15b}
+html[data-theme="mk3"] body{background:radial-gradient(ellipse at 50% 0,#54234c88,transparent 65%),repeating-linear-gradient(0deg,#120b18 0 3px,#160d1c 3px 4px);color:var(--text)}
+html[data-theme="mk3"] .app{background:linear-gradient(145deg,#311a38bb,transparent 50%),#110b15;border:2px solid #947143;border-radius:8px;box-shadow:0 0 0 3px #0a0710,0 28px 80px #0009}
+html[data-theme="mk3"] header{background:linear-gradient(100deg,#491d34,#19121f);border-bottom:2px solid var(--fighter-color)}
+html[data-theme="mk3"] header:after{height:2px;width:76px;background:var(--fighter-color);box-shadow:none;transform:none}
+html[data-theme="mk3"] .brand .helmet-logo{display:none}
+html[data-theme="mk3"] .brand-copy strong{font-family:Georgia,serif;color:#ffe0a1;letter-spacing:1.2px;text-shadow:1px 2px #8c2b36;font-size:calc(14px * var(--bue-font-scale,1))}
+html[data-theme="mk3"] .brand-copy small{font-family:monospace;font-size:calc(10px * var(--bue-font-scale,1));letter-spacing:1px;color:var(--fighter-color)}
+html[data-theme="mk3"] h1{font-family:Georgia,serif;letter-spacing:0;text-shadow:2px 2px #0a0710}
+html[data-theme="mk3"] .mk-fighter{display:flex;position:relative;isolation:isolate;overflow:hidden;margin:16px 16px 6px;min-height:188px;border:2px solid #a7844b;border-radius:3px;background:#160f1d;box-shadow:inset 0 0 0 2px #2d172d,0 4px 0 #06040b}
+html[data-theme="mk3"] .mk-fighter:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 3px,#00000019 3px 4px);pointer-events:none;z-index:3}
+.mk-fighter-copy{padding:18px 8px 18px 16px;width:55%;position:relative;z-index:2;background:linear-gradient(90deg,#180f20 84%,transparent)}
+.mk-edition,.mk-round{display:block;font:calc(9px * var(--bue-font-scale,1))/1.4 monospace;letter-spacing:1px;color:#d8b676}.mk-round{margin-top:14px;color:var(--fighter-color)}
+.mk-fighter-copy strong{display:block;font:700 calc(24px * var(--bue-font-scale,1))/1.08 Georgia,serif;margin:6px 0 8px;color:#ffe3a7;text-shadow:2px 2px #63232f;overflow-wrap:anywhere}
+.mk-fighter-copy p{font-size:calc(12px * var(--bue-font-scale,1));color:#d7c7dd;max-width:180px;line-height:1.4}
+.mk-health{display:block;width:100%;height:9px;background:#34232d;border:1px solid #eac078;margin-top:15px;box-shadow:0 2px 0 #06040b}.mk-health i{display:block;height:100%;width:85%;background:linear-gradient(90deg,#c33236,#ffcd6b)}
+html[data-theme="mk3"] #mk-portrait{position:absolute;right:0;top:0;bottom:0;width:188px;height:188px;z-index:1;opacity:.98}
+html[data-theme="mk3"] .card{border:1px solid #846444;border-radius:4px;box-shadow:inset 0 0 0 1px #382336,0 3px 0 #08060c;background:linear-gradient(135deg,#50304d33,transparent 65%),#211624}
+html[data-theme="mk3"] .card h2{font-family:Georgia,serif;color:#ffe0a1;font-size:calc(18px * var(--bue-font-scale,1))}
+html[data-theme="mk3"] .card h2:before{background:var(--fighter-color);box-shadow:none;border-radius:0}
+html[data-theme="mk3"] .hero{border-color:#ae8045;background:linear-gradient(110deg,#5b29315c,transparent),#201322}
+html[data-theme="mk3"] .hero:before{opacity:.18;background:repeating-linear-gradient(0deg,transparent 0 3px,#0005 3px 4px)}
+html[data-theme="mk3"] .hero-helmet{display:none}
+html[data-theme="mk3"] .hero .value{color:#ffe0a1;text-shadow:2px 2px #7c2b31;font-family:Georgia,serif}
+html[data-theme="mk3"] .hero-top{color:var(--fighter-color);font-family:monospace;letter-spacing:1px}
+html[data-theme="mk3"] .primary{border-radius:4px;background:linear-gradient(#ffe0a0,#ce903e);color:#24141d;border:1px solid #fff0b7;box-shadow:0 3px 0 #6b3727}
+html[data-theme="mk3"] input,html[data-theme="mk3"] select,html[data-theme="mk3"] textarea{border-radius:4px;background:#150f1b;border-color:#9c7958}
+html[data-theme="mk3"] dialog{border-radius:6px;background:#201522;border:2px solid #bc8f56}
+html[data-theme="mk3"] .check{border-radius:4px;border-color:#d3ac70}
+html[data-theme="mk3"] .check.yes{background:#ffe0a0;color:#201322;box-shadow:0 2px 0 #6d392c}
+html[data-theme="mk3"] .calendar button{border-radius:3px}
+html[data-theme="mk3"] .calendar button.selected{background:#793043;color:#fff0d0;border:1px solid #e7b276}
+html[data-theme="mk3"] .segment,html[data-theme="mk3"] .segment button,html[data-theme="mk3"] .wishes-tabs button,html[data-theme="mk3"] .theme-choice,html[data-theme="mk3"] .table-scroll{border-radius:4px}
+html[data-theme="mk3"] .tabs{background:#160e1b;border-top:2px solid #ac7e47}
+html[data-theme="mk3"] .tabs button.active{color:#ffe0a0;border-top-color:var(--fighter-color);background:linear-gradient(#54293b66,transparent)}
+html[data-theme="mk3"] .plan-table th{background:#542737;color:#ffe3ac}
+html[data-theme="mk3"] .plan-table .total-row td{background:#653134;color:#ffe7ac}
+html[data-theme="mk3"] .theme-choice[data-theme-select="mk3"] img{object-fit:cover;object-position:left top;width:54px;height:54px}
+@media(max-width:360px){html[data-theme="mk3"] .app{border-width:0;border-radius:0}.mk-fighter-copy{width:56%;padding-left:12px}.mk-fighter-copy strong{font-size:calc(21px * var(--bue-font-scale,1))}html[data-theme="mk3"] .mk-fighter{margin:12px 10px 4px;min-height:172px}html[data-theme="mk3"] #mk-portrait{width:172px;height:172px}.mk-edition{font-size:calc(8px * var(--bue-font-scale,1));letter-spacing:.3px}}
+@media(prefers-reduced-motion:reduce){html[data-theme="mk3"] *{scroll-behavior:auto}}

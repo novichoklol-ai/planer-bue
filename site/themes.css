@@ -1,0 +1,85 @@
+/* Each universe controls every screen; the install icon always remains Iron Man. */
+html[data-theme] {--armor:#a52036;--wash:#7c1b304d;--glow:#7becff22;--bg:#080d17;--card:#111d2c;--line:#3a4a61;--accent:#ffd684;--reactor:#7becff;--muted:#a5b7cd;--header:#8b253d66;--table:#234467;--panel-hi:#26395266}
+html[data-theme="thanos"] {--armor:#8c52c8;--wash:#59338b66;--glow:#b88cff33;--bg:#0f0b1a;--card:#22192f;--line:#55416c;--accent:#edd194;--reactor:#c9a0ff;--muted:#bcb1cf;--header:#70409077;--table:#513b70;--panel-hi:#76599733}
+html[data-theme="guardians"] {--armor:#c67655;--wash:#5c407966;--glow:#64dce633;--bg:#0b0e24;--card:#171f38;--line:#485678;--accent:#ffbd82;--reactor:#86e9e9;--muted:#aabbd8;--header:#3e427788;--table:#35466d;--panel-hi:#56609333}
+html[data-theme="deadpool-wolverine"] {--armor:#c32b42;--wash:#8c203544;--glow:#f7d55422;--bg:#121216;--card:#23232b;--line:#6c5553;--accent:#fbd66b;--reactor:#ffe695;--muted:#c0b9be;--header:#9c233955;--table:#773343;--panel-hi:#705d3933}
+html[data-theme="loki"] {--armor:#257a55;--wash:#23543e66;--glow:#8df0ac22;--bg:#071610;--card:#10291f;--line:#3b654e;--accent:#efdaa0;--reactor:#93e2aa;--muted:#aec4b6;--header:#24744966;--table:#245a43;--panel-hi:#61836333}
+html[data-theme] body {background:radial-gradient(ellipse at 0 0,var(--wash),transparent 48%),radial-gradient(ellipse at 100% 70%,var(--glow),transparent 50%),var(--bg)}
+html[data-theme] .app {background:linear-gradient(135deg,var(--wash),transparent 30%),var(--bg);border-color:var(--line)}
+html[data-theme] header {background:linear-gradient(110deg,var(--header),transparent 70%),var(--card);border-bottom-color:var(--accent)}
+html[data-theme] header:after {background:linear-gradient(90deg,var(--armor),var(--accent),var(--reactor))}
+html[data-theme] .brand-copy small,html[data-theme] .mission-label {color:var(--reactor)}
+html[data-theme] .hero {background:linear-gradient(125deg,var(--wash),transparent 65%),var(--card);border-color:var(--accent)}
+html[data-theme] .hero-helmet {filter:drop-shadow(0 0 18px var(--glow))}
+html[data-theme] .hero .value {color:var(--accent)}
+html[data-theme] .card {background:linear-gradient(135deg,var(--panel-hi),transparent 65%),var(--card);border-color:var(--line)}
+html[data-theme] .card h2 {color:var(--accent)}
+html[data-theme] .card h2:before {background:var(--armor);box-shadow:0 0 10px var(--wash)}
+html[data-theme] .primary {background:linear-gradient(125deg,var(--armor),var(--header)),var(--card);border-color:var(--line);color:#fff8ec}
+html[data-theme] .check.yes {background:var(--reactor);border-color:var(--reactor);color:#162129}
+html[data-theme] .progress div {background:linear-gradient(90deg,var(--armor),var(--accent))}
+html[data-theme] .tabs {background:var(--bg);border-top-color:var(--line)}
+html[data-theme] .tabs button.active {color:var(--reactor);border-top-color:var(--reactor);background:linear-gradient(var(--glow),transparent)}
+html[data-theme] .segment {background:var(--bg);border-color:var(--line)}
+html[data-theme] .segment .active {background:var(--wash);color:var(--accent);box-shadow:inset 0 0 0 1px var(--line)}
+html[data-theme] input,html[data-theme] select,html[data-theme] textarea {background:var(--bg);border-color:var(--line)}
+html[data-theme] dialog {background:var(--card);border-color:var(--line)}
+html[data-theme] .calendar button.selected {background:var(--armor);color:#fff}
+html[data-theme] .wishes-tabs button {background:linear-gradient(135deg,var(--panel-hi),transparent),var(--card);border-color:var(--line)}
+html[data-theme] .wishes-tabs button.active {background:linear-gradient(135deg,var(--wash),transparent),var(--card);border-color:var(--accent);color:var(--accent)}
+html[data-theme] .wishes-tabs button span,html[data-theme] .money-cell {color:var(--accent)}
+html[data-theme] .plan-table th {background:var(--table);border-color:var(--line)}
+html[data-theme] .plan-table td,html[data-theme] .table-scroll {border-color:var(--line)}
+html[data-theme] .plan-table .total-row td {background:var(--wash);color:var(--accent)}
+html[data-theme] .plan-table .week-row td {background:var(--table);color:var(--reactor)}
+html[data-theme] .balance-table td {border-color:var(--line)}
+html[data-theme] .balance-table .closing td {color:var(--reactor);background:var(--glow)}
+html[data-theme="thanos"] .hero:before {background:radial-gradient(circle at 15% 18%,#ea696f88 0 2px,transparent 3px),radial-gradient(circle at 72% 70%,#61cce788 0 2px,transparent 3px),radial-gradient(circle at 48% 32%,#a7ed7988 0 2px,transparent 3px),radial-gradient(circle at 85% 21%,#f7db7588 0 2px,transparent 3px);opacity:.55}
+html[data-theme="guardians"] .hero:before {background:radial-gradient(circle at 15% 25%,#fff 0 1px,transparent 2px),radial-gradient(circle at 69% 68%,#9ceeff 0 1px,transparent 2px),radial-gradient(circle at 45% 12%,#fff 0 1px,transparent 2px),radial-gradient(circle at 90% 35%,#ffcb8e 0 2px,transparent 3px),linear-gradient(140deg,transparent 45%,#f59a4c22 50%,transparent 55%);opacity:.6;background-size:130px 90px,170px 140px,100px 120px,200px 170px,100% 100%}
+html[data-theme="deadpool-wolverine"] .hero {background:linear-gradient(115deg,#9f193b55 0 49%,#eac14333 50% 100%),var(--card)}
+html[data-theme="deadpool-wolverine"] .hero:before {background:repeating-linear-gradient(125deg,transparent 0 37px,#fff1b466 38px 40px,transparent 41px 47px);opacity:.12}
+html[data-theme="deadpool-wolverine"] .card {border-radius:10px;border-width:2px}html[data-theme="deadpool-wolverine"] h1 {font-weight:850;text-shadow:2px 2px 0 #a31b39}
+html[data-theme="loki"] .hero:before {background:repeating-radial-gradient(ellipse at 50% 120%,transparent 0 30px,#e4c98d 31px,transparent 32px 58px);opacity:.13}
+.theme-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.theme-choice {display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:13px;border:1px solid var(--line);border-radius:13px;min-height:160px;text-align:left;position:relative;background:var(--bg);color:var(--text)}.theme-choice img {width:55px;height:55px;object-fit:contain}.theme-choice strong {font-size:calc(13px * var(--bue-font-scale,1));line-height:1.3}.theme-choice small {font-size:calc(11px * var(--bue-font-scale,1));color:var(--muted);line-height:1.5}.theme-choice[aria-pressed="true"] {border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}.theme-choice[aria-pressed="true"]:after {content:"✓";position:absolute;right:10px;top:9px;color:var(--accent);font-size:calc(20px * var(--bue-font-scale,1))}.theme-choice:last-child {grid-column:1/-1;flex-direction:row;align-items:center;min-height:90px}.theme-choice:last-child div {max-width:80%}.theme-choice:last-child small {display:block;margin-top:5px}.theme-tip {font-size:calc(12px * var(--bue-font-scale,1));line-height:1.6;color:var(--muted);margin-top:13px}
+
+.brand-copy strong {font-size:calc(12px * var(--bue-font-scale,1));letter-spacing:1px;max-width:180px;display:block;line-height:1.4}.brand-copy small {font-size:calc(8px * var(--bue-font-scale,1));letter-spacing:1px}
+@media(max-width:360px){.brand-copy strong{font-size:calc(11px * var(--bue-font-scale,1));max-width:155px}.brand-copy small{font-size:calc(7px * var(--bue-font-scale,1))}}
+
+.theme-choice strong,.theme-choice small{display:block}.theme-choice small{margin-top:6px}
+html[data-theme="ironman"] .hero-helmet{border-radius:50%}
+
+/* Gentle: peonies, warm paper, dusty rose and sage. All surfaces stay light in iOS dark mode. */
+html[data-theme="gentle"]{color-scheme:light;--bg:#faf5f3;--card:#fffdfc;--text:#493b48;--muted:#786776;--line:#e2cfd7;--accent:#945773;--reactor:#527462;--armor:#985773;--wash:#eed4e15e;--glow:#dce9e163;--header:#f5dfe9bb;--table:#f2e0e8;--panel-hi:#f9eaf199;--soft:#f1e8ef;--green:#3d7563;--red:#a5435a}
+.theme-choice:last-child{grid-column:auto;flex-direction:column;align-items:flex-start;min-height:160px}.theme-choice:last-child div{max-width:100%}
+html[data-theme="gentle"] body{background:radial-gradient(ellipse at 10% 10%,#efdce777,transparent 50%),radial-gradient(ellipse at 90% 60%,#e1e9e177,transparent 50%),var(--bg)}
+html[data-theme="gentle"] .app{background:linear-gradient(145deg,#f8edef,#fbf8f2);box-shadow:0 22px 80px #9a6b8525;border-color:#ead5df;border-radius:27px}
+html[data-theme="gentle"] header{background:linear-gradient(115deg,#f7e5ebee,#faf5efbb);border-bottom:1px solid var(--line)}
+html[data-theme="gentle"] header:after{background:linear-gradient(90deg,#d5a3b8,#dfccdc,#bbd2c3);height:2px;box-shadow:none;transform:none;clip-path:none;border-radius:5px}
+html[data-theme="gentle"] .hero{background:radial-gradient(ellipse at 80% 25%,#e3e4edaa,transparent 58%),linear-gradient(130deg,#f6e0e8,#fffbf5);border-color:#e8c6d7;border-radius:24px;box-shadow:0 8px 25px #bba0ad18}
+html[data-theme="gentle"] .hero:before{background:url('assets/gentle.svg') 145% 80%/250px no-repeat;opacity:.18}
+html[data-theme="gentle"] .hero .value{color:#874b68;font-size:calc(36px * var(--bue-font-scale,1));font-weight:650}
+html[data-theme="gentle"] .hero-helmet{width:140px;height:140px;flex-basis:140px;filter:drop-shadow(0 5px 10px #b77e8b20)}
+html[data-theme="gentle"] .hero-top{font-size:calc(10px * var(--bue-font-scale,1));letter-spacing:.7px;text-transform:none}
+html[data-theme="gentle"] .squad{border-top-color:#d8becb70}.squad span+span:before{color:var(--muted)}
+html[data-theme="gentle"] .card{border-color:#e8d8df;border-radius:21px;box-shadow:0 5px 20px #a2768f0c;background:linear-gradient(135deg,#fffdfb,#fcf7fa)}
+html[data-theme="gentle"] .card h2:before{width:6px;height:6px;border-radius:50%;vertical-align:3px;background:#cda2b6;box-shadow:none}
+html[data-theme="gentle"] .primary{background:linear-gradient(110deg,#9c5b78,#875370);color:#fffdfc;border-color:#ac7290;box-shadow:0 5px 16px #a2718c22}
+html[data-theme="gentle"] .top button.active{background:#efdce6}
+html[data-theme="gentle"] .check{border-color:#b89caf}.check.yes{box-shadow:none}
+html[data-theme="gentle"] .check.yes{background:#5c8170;border-color:#5c8170;color:#fff}
+html[data-theme="gentle"] .tabs{background:#fff9fc;border-top-color:#e1cdd7}
+html[data-theme="gentle"] .tabs button.active{background:linear-gradient(#efdde7,transparent);color:#874b68;border-top-color:#c89bb1}
+html[data-theme="gentle"] .tabs button.active b{text-shadow:none}
+html[data-theme="gentle"] .wishes-tabs button{color:var(--muted)}
+html[data-theme="gentle"] .wish-description,html[data-theme="gentle"] .month-note,html[data-theme="gentle"] .plan-help,html[data-theme="gentle"] .status-caption,html[data-theme="gentle"] .plan-table .note-cell,html[data-theme="gentle"] .table-empty{color:var(--muted)}
+html[data-theme="gentle"] .plan-table th,html[data-theme="gentle"] .plan-table .article{color:var(--text)}
+html[data-theme="gentle"] .plan-status button{background:#fffafc;border-color:#d9c4ce;color:var(--muted)}
+html[data-theme="gentle"] .plan-status .selected-yes{background:#e5f0e8;border-color:#96b6a2;color:#34624c}
+html[data-theme="gentle"] .plan-status .selected-no{background:#f7e0e5;border-color:#dca5b6;color:#954357}
+html[data-theme="gentle"] .mandatory-tag{color:#815975}
+html[data-theme="gentle"] .offline-status{background:#f7f3ee;color:#6f5c6c;border-color:#ddc9d3}
+html[data-theme="gentle"] .offline-status[data-ready="true"]{background:#f0f5ef;color:#436e59;border-color:#bfd0bd}
+html[data-theme="gentle"] dialog{box-shadow:0 25px 95px #85657940}
+html[data-theme="gentle"] dialog::backdrop{background:#56445550;backdrop-filter:blur(3px)}
+html[data-theme="gentle"] .budget-negative{color:#a5435a!important}
+@media(max-width:360px){html[data-theme="gentle"] .hero-helmet{width:110px;height:110px;flex-basis:110px}html[data-theme="gentle"] .hero .value{font-size:calc(29px * var(--bue-font-scale,1))}html[data-theme="gentle"] .app{border-radius:0}}
