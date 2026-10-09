@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "Аперолька",
-  "short_name": "Аперолька",
+  "name": "Планер BUE",
+  "short_name": "Планер BUE",
   "description": "Дела, календарь, цели, месячный финансовый план и желания: книги, фильмы, рецепты.",
   "lang": "ru",
   "start_url": "aperolka/",
@@ -11,16 +11,28 @@
   "theme_color": "#0d1520",
   "icons": [
     {
-      "src": "https://myday-hero-oct08-2026.welltoast4.chatgpt.site/assets/ironman-icon-192-v10.png",
+      "src": "assets/bue-icon-192-v21.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "https://myday-hero-oct08-2026.welltoast4.chatgpt.site/assets/ironman-icon-512-v10.png",
+      "src": "assets/bue-icon-512-v21.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "assets/bue-icon-1024-v21.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/bue-icon-maskable-512-v21.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
